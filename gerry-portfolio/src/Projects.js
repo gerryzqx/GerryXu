@@ -74,7 +74,7 @@ class Projects extends Component {
               size="small"
               color="secondary"
               target="_blank"
-              href="https://google.com"
+              href="https://gerryzqx.github.io/GerryXu/"
             >
               View Website
               <img src={website} alt="website-icon" className="website-icon" />
