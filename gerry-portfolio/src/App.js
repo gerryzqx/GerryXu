@@ -138,7 +138,7 @@ class App extends Component {
           <Button
             size="medium"
             variant="contained"
-            className="social-btn"
+            className="social-btn section-btn"
             style={{ color: "#f46f30" }}
             onClick={() => {
               this.setState({
@@ -151,13 +151,14 @@ class App extends Component {
             <img
               src={skills}
               alt="technical-skills"
+              className="section-icon"
               style={{ width: 20, marginLeft: 7 }}
             />
           </Button>
           <Button
             size="medium"
             variant="contained"
-            className="social-btn"
+            className="social-btn section-btn"
             style={{ color: "#34b7f1" }}
             onClick={() => {
               this.setState({
@@ -170,13 +171,14 @@ class App extends Component {
             <img
               src={courses}
               alt="courses-taken"
+              className="section-icon"
               style={{ width: 20, marginLeft: 7 }}
             />
           </Button>
           <Button
             size="medium"
             variant="contained"
-            className="social-btn"
+            className="social-btn section-btn"
             style={{ color: "#8080ff" }}
             onClick={() => {
               this.setState({
@@ -189,13 +191,14 @@ class App extends Component {
             <img
               src={projects}
               alt="projects"
+              className="section-icon"
               style={{ width: 20, marginLeft: 7 }}
             />
           </Button>
           <Button
             size="medium"
             variant="contained"
-            className="social-btn"
+            className="social-btn section-btn"
             style={{ color: "#2eb82e" }}
             onClick={() => {
               this.setState({
@@ -208,6 +211,7 @@ class App extends Component {
             <img
               src={experiences}
               alt="experience"
+              className="section-icon"
               style={{ width: 20, marginLeft: 7 }}
             />
           </Button>

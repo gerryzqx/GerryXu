@@ -50,6 +50,19 @@
 .about:hover {
   transform: scale(1.1);
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .about {
+    width: 100% !important;
+  }
+  .section-btn {
+    padding: 0 15px 0 15px !important;
+    font-size: 10px !important;
+    width: 100% !important;
+  }
+  .section-icon {
+    display: none !important;
+  }
+}
 .college-text {
   padding: 3%;
 }

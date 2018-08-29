@@ -29,14 +29,15 @@ import {
 } from "@material-ui/core";
 
 function Transition(props) {
-  return <Slide direction="up" {...props} />;
+  return <Slide direction="down" {...props} />;
 }
 
 class Skills extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: true
+      open: true,
+      scroll: "body"
     };
   }
 
@@ -49,6 +50,7 @@ class Skills extends Component {
       <div>
         <Dialog
           open={this.state.open}
+          scroll={this.state.scroll}
           TransitionComponent={Transition}
           aria-labelledby="dialog-slide-title"
         >

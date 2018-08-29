@@ -19,7 +19,8 @@ class Courses extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: true
+      open: true,
+      scroll: "body"
     };
   }
 
@@ -32,6 +33,7 @@ class Courses extends Component {
       <div>
         <Dialog
           open={this.state.open}
+          scroll={this.state.scroll}
           TransitionComponent={Slide}
           aria-labelledby="dialog-slide-courses-taken"
         >
