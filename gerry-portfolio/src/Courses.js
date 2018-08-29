@@ -11,7 +11,8 @@ import {
   DialogTitle,
   Slide,
   Button,
-  Chip
+  Chip,
+  Typography
 } from "@material-ui/core";
 
 function Transition(props) {
@@ -28,6 +29,7 @@ class Courses extends Component {
   handleClose = () => {
     this.setState({ open: false });
   };
+
   render() {
     return (
       <div>
@@ -40,7 +42,9 @@ class Courses extends Component {
             id="dialog-slide-courses-taken"
             style={{ textAlign: "center" }}
           >
-            {"Courses Taken"}
+            <Typography variant="headline" style={{ color: "#34b7f1" }}>
+              {"COURSES TAKEN"}
+            </Typography>
           </DialogTitle>
           <DialogTitle id="dialog-slide-cs-courses">
             {"Computer Science Courses"}
@@ -52,7 +56,7 @@ class Courses extends Component {
             />{" "}
             <Chip label="CSC104: Discrete Math" className="course-item" />{" "}
             <Chip
-              label="CSC113: Programming Language(Python)"
+              label="CSC113: Programming Language (Python)"
               className="course-item"
             />
             <Chip
@@ -87,7 +91,7 @@ class Courses extends Component {
             <Chip label="MATH201: Calculus 1" className="course-item" />{" "}
             <Chip label="MATH202: Calculus 2" className="course-item" />{" "}
             <Chip
-              label="MATH203: Calculus 3(Multi-Variable)"
+              label="MATH203: Calculus 3 (Multi-Variable)"
               className="course-item"
             />{" "}
             <Chip
@@ -104,7 +108,7 @@ class Courses extends Component {
             />
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.handleClose}>
+            <Button onClick={this.handleClose} style={{ color: "red" }}>
               <img src={goBack} alt="go-back" style={{ marginRight: 7 }} /> Go
               Back
             </Button>

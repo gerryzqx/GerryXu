@@ -24,7 +24,8 @@ import {
   Slide,
   Button,
   Chip,
-  Avatar
+  Avatar,
+  Typography
 } from "@material-ui/core";
 
 function Transition(props) {
@@ -35,8 +36,7 @@ class Skills extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: true,
-      close: false
+      open: true
     };
   }
 
@@ -52,7 +52,12 @@ class Skills extends Component {
           TransitionComponent={Transition}
           aria-labelledby="dialog-slide-title"
         >
-          <DialogTitle id="dialog-slide-coding">
+          <DialogTitle id="dialog-slide-skills" style={{ textAlign: "center" }}>
+            <Typography variant="headline" style={{ color: "#f46f30" }}>
+              {"SKILLS"}
+            </Typography>
+          </DialogTitle>
+          <DialogTitle id="dialog-slide-coding-language">
             {"Programming Languages"}
           </DialogTitle>
           <DialogContent>
@@ -126,7 +131,7 @@ class Skills extends Component {
             />
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.handleClose}>
+            <Button onClick={this.handleClose} style={{ color: "red" }}>
               <img src={goBack} alt="go-back" style={{ marginRight: 7 }} /> Go
               Back
             </Button>

@@ -37,7 +37,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      content: ""
+      content: "",
+      open: true
     };
   }
 
@@ -45,9 +46,10 @@ class App extends Component {
     return (
       <div
         className="App"
-        data-aos="fade-up"
+        data-aos="zoom-in-up"
         data-aos-offset={5}
         data-aos-delay={100}
+        data-aos-duration={1500}
       >
         <Avatar src={profile} className="main-avatar" />
         <Paper className="name-paper">
@@ -65,7 +67,7 @@ class App extends Component {
               <img src={github} alt="github" />
             </IconButton>
           </Tooltip>
-          <Tooltip title="Contact Me" placement="top">
+          <Tooltip title="E-mail Me" placement="top">
             <IconButton
               className="social-btn"
               aria-label="Contact Me"
@@ -140,7 +142,8 @@ class App extends Component {
             style={{ color: "#f46f30" }}
             onClick={() => {
               this.setState({
-                content: "skills"
+                content: "skills",
+                open: true
               });
             }}
           >
@@ -158,7 +161,8 @@ class App extends Component {
             style={{ color: "#34b7f1" }}
             onClick={() => {
               this.setState({
-                content: "courses-taken"
+                content: "courses-taken",
+                open: true
               });
             }}
           >
@@ -176,7 +180,8 @@ class App extends Component {
             style={{ color: "#8080ff" }}
             onClick={() => {
               this.setState({
-                content: "projects"
+                content: "projects",
+                open: true
               });
             }}
           >
@@ -194,7 +199,8 @@ class App extends Component {
             style={{ color: "#2eb82e" }}
             onClick={() => {
               this.setState({
-                content: "experience"
+                content: "experience",
+                open: true
               });
             }}
           >
