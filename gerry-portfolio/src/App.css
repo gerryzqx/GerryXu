@@ -81,6 +81,10 @@
 }
 
 /* Projects */
+.code-btn {
+  width: 30%;
+}
+
 .code-icon {
   width: 13%;
   margin-left: 7px !important;
@@ -88,10 +92,10 @@
 
 .website-btn {
   margin-left: 7px !important;
-  width: 30%;
+  width: 25%;
 }
 .website-icon {
-  width: 13%;
+  width: 15%;
   margin-left: 7px !important;
 }
 

@@ -15,7 +15,7 @@ import {
 } from "@material-ui/core";
 
 function Transition(props) {
-  return <Slide direction="up" {...props} />;
+  return <Slide direction="left" {...props} />;
 }
 
 class Experience extends Component {
