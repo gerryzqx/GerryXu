@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 // Icons
+import projects from "./res/projects.svg";
 import goBack from "./res/back.svg";
 import code from "./res/code.svg";
 import website from "./res/website.svg";
@@ -17,17 +18,21 @@ import {
 } from "@material-ui/core";
 
 function Transition(props) {
-  return <Slide direction="right" {...props} />;
+  return <Slide direction="down" {...props} />;
 }
 
 class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: true,
+      open: false,
       scroll: "body"
     };
   }
+
+  handleOpen = () => {
+    this.setState({ open: true });
+  };
 
   handleClose = () => {
     this.setState({ open: false });
@@ -36,6 +41,21 @@ class Projects extends Component {
   render() {
     return (
       <div>
+        <Button
+          size="medium"
+          variant="contained"
+          className="social-btn section-btn"
+          style={{ color: "#8080ff" }}
+          onClick={this.handleOpen}
+        >
+          Projects
+          <img
+            src={projects}
+            alt="projects"
+            className="section-icon"
+            style={{ width: 20, marginLeft: 7 }}
+          />
+        </Button>
         <Dialog
           open={this.state.open}
           scroll={this.state.scroll}

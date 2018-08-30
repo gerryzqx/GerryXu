@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 // Icons
+import skills from "./res/skills.svg";
 import goBack from "./res/back.svg";
 import apple from "./res/appleinc.svg";
 import css from "./res/css3.svg";
@@ -36,10 +37,14 @@ class Skills extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: true,
+      open: false,
       scroll: "body"
     };
   }
+
+  handleOpen = () => {
+    this.setState({ open: true });
+  };
 
   handleClose = () => {
     this.setState({ open: false });
@@ -48,6 +53,21 @@ class Skills extends Component {
   render() {
     return (
       <div>
+        <Button
+          size="medium"
+          variant="contained"
+          className="social-btn section-btn"
+          style={{ color: "#f46f30" }}
+          onClick={this.handleOpen}
+        >
+          Skills
+          <img
+            src={skills}
+            alt="technical-skills"
+            className="section-icon"
+            style={{ width: 20, marginLeft: 7 }}
+          />
+        </Button>
         <Dialog
           open={this.state.open}
           scroll={this.state.scroll}

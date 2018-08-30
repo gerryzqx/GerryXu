@@ -23,14 +23,14 @@
   align-items: center;
 }
 .social-btn {
-  margin: 0 7px !important;
+  margin: 0 10px !important;
   transition: all ease-in-out 0.3s !important;
 }
 .social-btn:hover {
   transform: scale(1.1);
 }
 .name-paper {
-  margin-top: 10px;
+  margin-top: 15px;
   padding: 5px 20px;
   border-radius: 7px !important;
   border: 0.4px solid rgb(76, 100, 235);
@@ -51,28 +51,42 @@
   transform: scale(1.1);
 }
 
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+/* iPad mini */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .about {
-    width: 100% !important;
+    width: 40% !important;
   }
   .section-btn {
-    padding: 0 15px 0 15px !important;
+    padding: 0 10px 0 10px !important;
     font-size: 10px !important;
-    width: 100% !important;
+    width: 80% !important;
   }
   .section-icon {
-    display: none;
+    display: inline !important;
   }
-} */
-
-@media only screen and (orientation: portrait) {
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .about {
+    width: 50% !important;
+  }
+  .section-btn {
+    padding: 0 10px 0 10px !important;
+    font-size: 10px !important;
+    width: 80% !important;
+  }
+  .section-icon {
+    display: inline !important;
+  }
+}
+/* iPhone 6 and above */
+@media only screen and (min-device-width: 375px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .about {
     width: 100% !important;
   }
   .section-btn {
-    padding: 0 15px 0 15px !important;
+    padding: 0 10px 0 10px !important;
     font-size: 10px !important;
-    width: 100% !important;
+    width: 80% !important;
   }
   .section-icon {
     display: none;
@@ -96,12 +110,12 @@
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .about {
-    width: 90% !important;
+    width: 75% !important;
   }
   .section-btn {
-    padding: 0 15px 0 15px !important;
+    padding: 0 10px 0 10px !important;
     font-size: 10px !important;
-    width: 100% !important;
+    width: 80% !important;
   }
   .section-icon {
     display: inline !important;
@@ -130,7 +144,7 @@
 .image {
   width: 10%;
   position: relative;
-  left: 6% !important;
+  left: 3% !important;
   top: 8px !important;
 }
 /* Skills */
