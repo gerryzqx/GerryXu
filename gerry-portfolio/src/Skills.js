@@ -132,7 +132,7 @@ class Skills extends Component {
           <DialogTitle id="dialog-slide-coding">{"Languages"}</DialogTitle>
           <DialogContent>
             <Chip label="English" className="skill-item" />{" "}
-            <Chip label="Mandarin(Conversational)" className="skill-item" />
+            <Chip label="Mandarin (Conversational)" className="skill-item" />
           </DialogContent>
           <DialogTitle id="dialog-slide-os">{"Operating Systems"}</DialogTitle>
           <DialogContent>
