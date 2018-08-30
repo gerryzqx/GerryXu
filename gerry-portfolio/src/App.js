@@ -37,8 +37,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      content: "",
-      open: true
+      content: ""
     };
   }
 
@@ -142,8 +141,7 @@ class App extends Component {
             style={{ color: "#f46f30" }}
             onClick={() => {
               this.setState({
-                content: "skills",
-                open: true
+                content: "skills"
               });
             }}
           >
@@ -162,8 +160,7 @@ class App extends Component {
             style={{ color: "#34b7f1" }}
             onClick={() => {
               this.setState({
-                content: "courses-taken",
-                open: true
+                content: "courses-taken"
               });
             }}
           >
@@ -182,8 +179,7 @@ class App extends Component {
             style={{ color: "#8080ff" }}
             onClick={() => {
               this.setState({
-                content: "projects",
-                open: true
+                content: "projects"
               });
             }}
           >
@@ -202,8 +198,7 @@ class App extends Component {
             style={{ color: "#2eb82e" }}
             onClick={() => {
               this.setState({
-                content: "experience",
-                open: true
+                content: "experience"
               });
             }}
           >
@@ -215,27 +210,7 @@ class App extends Component {
               style={{ width: 20, marginLeft: 7 }}
             />
           </Button>
-          {/* {this.state.content !== "" ? (
-            <Tooltip title="Clear" placement="top">
-              <IconButton
-                className="social-btn"
-                onClick={() => {
-                  this.setState({ content: "", color: "" });
-                }}
-              >
-                <img src={cancel} alt="delete-all" />
-              </IconButton>
-            </Tooltip>
-          ) : null} */}
         </div>
-        {/* {this.state.content !== "" ? (
-          <Typography
-            variant="headline"
-            style={{ color: this.state.color, marginTop: 18 }}
-          >
-            {this.state.content.toUpperCase()}
-          </Typography>
-        ) : null} */}
         {this.state.content === "skills" ? (
           <Skills />
         ) : this.state.content === "courses-taken" ? (

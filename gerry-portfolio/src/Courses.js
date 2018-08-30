@@ -15,6 +15,10 @@ import {
   Typography
 } from "@material-ui/core";
 
+function Transition(props) {
+  return <Slide direction="down" {...props} />;
+}
+
 class Courses extends Component {
   constructor(props) {
     super(props);
@@ -34,7 +38,7 @@ class Courses extends Component {
         <Dialog
           open={this.state.open}
           scroll={this.state.scroll}
-          TransitionComponent={Slide}
+          TransitionComponent={Transition}
           aria-labelledby="dialog-slide-courses-taken"
         >
           <DialogTitle

@@ -50,7 +50,8 @@
 .about:hover {
   transform: scale(1.1);
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .about {
     width: 100% !important;
   }
@@ -60,7 +61,64 @@
     width: 100% !important;
   }
   .section-icon {
-    display: none !important;
+    display: none;
+  }
+} */
+
+@media only screen and (orientation: portrait) {
+  .about {
+    width: 100% !important;
+  }
+  .section-btn {
+    padding: 0 15px 0 15px !important;
+    font-size: 10px !important;
+    width: 100% !important;
+  }
+  .section-icon {
+    display: none;
+  }
+  .website-btn {
+    width: 77% !important;
+  }
+  .website-icon {
+    width: 12%;
+    margin-left: 7px !important;
+  }
+  .code-btn {
+    width: 78% !important;
+    margin: 0px 0px 5px 5px !important;
+  }
+  .code-icon {
+    width: 15%;
+    margin-left: 7px !important;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .about {
+    width: 90% !important;
+  }
+  .section-btn {
+    padding: 0 15px 0 15px !important;
+    font-size: 10px !important;
+    width: 100% !important;
+  }
+  .section-icon {
+    display: inline !important;
+  }
+  .website-btn {
+    width: 32% !important;
+  }
+  .website-icon {
+    width: 11%;
+    margin-left: 7px !important;
+  }
+  .code-btn {
+    width: 40% !important;
+  }
+  .code-icon {
+    width: 18%;
+    margin-left: 7px !important;
   }
 }
 .college-text {
@@ -87,7 +145,7 @@
 /* Courses */
 .course-item {
   transition: all ease-in-out 0.3s !important;
-  margin: 2px 0px !important;
+  margin: 3px 3px !important;
 }
 .course-item:hover {
   transform: scale(1.1);
