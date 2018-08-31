@@ -23,7 +23,8 @@ class Experience extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false
+      open: false,
+      scroll: "body"
     };
   }
 
@@ -55,6 +56,7 @@ class Experience extends Component {
         </Button>
         <Dialog
           open={this.state.open}
+          scroll={this.state.scroll}
           TransitionComponent={Transition}
           aria-labelledby="alert-dialog-slide-experience"
         >
